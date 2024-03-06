@@ -9,10 +9,18 @@ import Patient from '../components/Patient';
 const Home = () => {
   const [appointment, setAppointment] = useState(JSON.parse(localStorage.getItem("list")) || [...appointmentData])
 
+  const handleAdd = (newAppointment) => {
+    setAppointment([newAppointment, ...appointment]);
+    localStorage.setItem(
+      "list",
+      JSON.stringify([newAppointment, ...appointment])
+    );
+  };
+
 
   return (
     <Container>
-      <Doctors appointment={appointment} setAppointment={setAppointment}/>
+      <Doctors appointment={appointment} setAppointment={setAppointment} handleAdd={handleAdd} />
      <AddPatient/>
      <Patient appointment={appointment} setAppointment={setAppointment}/>
     </Container>

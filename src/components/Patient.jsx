@@ -4,31 +4,29 @@ import { MdRadioButtonUnchecked, MdCheckCircle } from "react-icons/md";
 import { useState } from "react";
 
 
-const Patient = ({ appointment, setAppointment,show,drName }) => {
-    console.log(appointment);
-    const [patientName, setPatientName] = useState("")
-    const [date, setDate] = useState("")
-
-
+const Patient = ({ appointment, setAppointment}) => {
+    // console.log(appointment);
+    //& DELETE APPOINTMENT (PERMANENTLY)\\
     const deleteAppointment = (remove) => {
-        
-        //^ 1. yol
-        // const filteredList = appointment.filter((item) => item.id !== remove);
-        // setAppointment(filteredList);
-        // localStorage.setItem("list", JSON.stringify(filteredList));
 
-        if (window.confirm(`Appointment will be deleted, are you sure?`)){
- //^ 2. yol
-        localStorage.setItem("list",
-        JSON.stringify(appointment=appointment.filter((appointment)=> appointment.id !== remove)))
-        setAppointment(JSON.parse(localStorage.getItem("list")))
+        if (window.confirm(`Appointment will be deleted, are you sure?`)) {
+            //^ localstorage de kalici olarak silmenin 1. yolu
+            // const filteredList = appointment.filter((item) => item.id !== remove);
+            // setAppointment(filteredList);
+            // localStorage.setItem("list", JSON.stringify(filteredList));
+
+            //^  localstorage de kalici olarak silmenin 2. yolu
+            localStorage.setItem("list",
+                JSON.stringify(appointment = appointment.filter((appointment) => appointment.id !== remove)))
+            setAppointment(JSON.parse(localStorage.getItem("list")))
         }
 
-       
     }
 
+    //& SET ISDONE STATUS PERMANENTLY (LOCAL STORAGE)\\
     const styleStorage = (x) => {
-        const newList = appointment.map((a)=> a.id === x.id ? {...a, isDone: !a.isDone} : a)
+        //^ localstorage ye isDone statusu degismis olanlari eklemek icin
+        const newList = appointment.map((a) => a.id === x.id ? { ...a, isDone: !a.isDone } : a)
         setAppointment(newList)
         localStorage.setItem("list", JSON.stringify(newList))
     }
