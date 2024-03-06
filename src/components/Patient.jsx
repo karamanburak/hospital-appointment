@@ -1,10 +1,9 @@
 import { Container } from "react-bootstrap";
 import { FaTrashAlt } from "react-icons/fa";
 import { MdRadioButtonUnchecked, MdCheckCircle } from "react-icons/md";
-import { useState } from "react";
 
 
-const Patient = ({ appointment, setAppointment}) => {
+const Patient = ({ appointment, setAppointment, display, setDisplay}) => {
     // console.log(appointment);
     //& DELETE APPOINTMENT (PERMANENTLY)\\
     const deleteAppointment = (remove) => {
@@ -32,8 +31,9 @@ const Patient = ({ appointment, setAppointment}) => {
     }
 
     return (
-        <Container className='card-container appointment p-3 '>
-        <h1 style={{color:"red"}}>APPOINTMENT LIST</h1>
+        <>
+        {display &&   <Container className='card-container appointment p-3 '>
+        <h1 style={{color:"red"}}>Appointment List</h1>
             {appointment.map((person, i) => {
                 return (
                     <div key={i} className="appointment-div">
@@ -54,7 +54,9 @@ const Patient = ({ appointment, setAppointment}) => {
                 )
             })}
 
-        </Container>
+        </Container>}
+      
+        </>
     )
 }
 

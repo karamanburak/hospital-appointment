@@ -5,6 +5,7 @@ const AddPatient = ({ drName, show, handleClose, handleAdd }) => {
   const [patientName, setPatientName] = useState("")
   const [date, setDate] = useState("")
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(patientName, date);
@@ -21,7 +22,8 @@ const AddPatient = ({ drName, show, handleClose, handleAdd }) => {
   };
 
   return (
-    <div><Modal show={show} onHide={handleClose}>
+    <div>
+    <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
         <Modal.Title>{drName}</Modal.Title>
       </Modal.Header>
