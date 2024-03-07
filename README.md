@@ -72,4 +72,4 @@ Build a Hospital Appointment App using ReactJS.
 
 ## Additional Data
 
-  - [Data.js](./helper/data.js)
+  - [Data.js](./src/helper/data.js)
