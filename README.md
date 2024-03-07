@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Live](https://hospita-appointment-page.netlify.app/)
+[Live](https://hospital-appointment-page.netlify.app/)
 
 ## Description
 
