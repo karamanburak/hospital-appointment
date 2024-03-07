@@ -23,9 +23,11 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    /* border: 2px solid red; */
+    
 }
+
+
 .card-container h1 {
     display: inline-block;
     font-family: "Protest Guerrilla", sans-serif;
@@ -68,28 +70,22 @@ body {
 }
 
 .appointment-div {
-  width: 600px;
-    display: flex;
+     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+    align-items: center; 
+     position: relative; 
     margin-top: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
     font-style: italic;
+    width: 1000px;
 }
+
 
 .header-div{
     margin-top: 2rem;
 }
 
-.appointment{
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-bottom: 2rem;
-}
 
 h3 {
     display: flex;
@@ -160,4 +156,12 @@ transition: all ease-in-out .2s;
 
 .radio-icon{
     color: #360940;
+}
+
+
+@media screen and (max-width:1200px) {
+    .appointment-div{
+        width: 500px;
+    }
+    
 }

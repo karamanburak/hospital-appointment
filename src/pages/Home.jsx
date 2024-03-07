@@ -92,7 +92,7 @@ const Home = () => {
               </Card>
             );
           })}
-          <img className="connection rounded-4" src={connection} />
+          <img className= "connection" src={connection} />
         </Row>
           <PatientList appointment={appointment} setAppointment={setAppointment} doctors={doctors} />
       </Container>
