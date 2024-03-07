@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Button, Form, Modal } from "react-bootstrap"
+import uuid from 'react-uuid'
 
 const AddPatient = ({ drName, show, handleClose, handleAdd }) => {
   const [patientName, setPatientName] = useState("")
@@ -8,11 +9,10 @@ const AddPatient = ({ drName, show, handleClose, handleAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(patientName, date);
 
     const newAppointment = {
-      id: new Date().getTime(),
-      text: patientName,
+      id: uuid(),
+      patientName: patientName,
       day: date,
       isDone: false,
       doctor: drName,
