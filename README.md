@@ -19,10 +19,10 @@ SOLUTION
 │    │       │
 │    │       └── PatientList.jsx
 │    │
-│    ├── helper
+│    ├── pages
 │    │       └── Home.jsx
-│    │ 
-│    │ 
+│    ├── helper
+│    │       └── Data.js
 │    ├── App.js
 │    ├── index.css
 │    └── index.js
@@ -70,4 +70,4 @@ Build a Hospital Appointment App using ReactJS.
 
 ## Additional Data
 
-  - [Data.js](./helpers/data.js)
+  - [Data.js](./helper/data.js)
