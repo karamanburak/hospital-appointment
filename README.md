@@ -1,5 +1,9 @@
 # Hospital-Appointment-React
 
+## Demo
+
+[Live](https://hospita-appointment-page.netlify.app/)
+
 ## Description
 
 Project aims to create a Hospital Appointment App.
@@ -36,9 +40,7 @@ SOLUTION
 
 ![Project Snapshot](https://github.com/karamanburak/Hospital-Appointment-React/assets/150926922/9a1f5b83-fb6a-4da2-ba43-083f0187ceb4)
 
-## Demo
 
-[Live](https://hospital-appointment-eta.vercel.app/)
 
 ## Objective
 
