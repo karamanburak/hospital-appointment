@@ -34,7 +34,7 @@ SOLUTION
 
 ## Expected Outcome
 
-![Project Snapshot](./helper/appointment.gif)
+![Project Snapshot](https://github.com/karamanburak/Hospital-Appointment-React/assets/150926922/9a1f5b83-fb6a-4da2-ba43-083f0187ceb4)
 
 ## Demo
 
