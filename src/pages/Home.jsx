@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button, Card, CardFooter, Container, Row } from "react-bootstrap";
 import logo from "../helper/logo.png";
-import connection from "../helper/heart-beat.jpg";
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
@@ -92,7 +91,6 @@ const Home = () => {
               </Card>
             );
           })}
-          <img className= "connection" src={connection} />
         </Row>
           <PatientList appointment={appointment} setAppointment={setAppointment} doctors={doctors} />
       </Container>

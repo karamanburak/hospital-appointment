@@ -30,7 +30,7 @@ const PatientList = ({ appointment, setAppointment, doctors }) => {
   }
 
   return (
-    <Container className='card-container appointment p-3 '>
+    <Container className='card-container appointment p-3 mt-5 '>
       <h2 style={{ color: "red" }}>APPOINTMENT LIST</h2>
       {appointment.map((patient, i) => (
         <div>
