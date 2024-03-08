@@ -1,7 +1,8 @@
 
-import { Container } from "react-bootstrap";
+import { Container, Card} from "react-bootstrap";
 import { FaTrashAlt } from "react-icons/fa";
 import { MdRadioButtonUnchecked, MdCheckCircle } from "react-icons/md";
+
 
 const PatientList = ({ appointment, setAppointment, doctors }) => {
   //& DELETE APPOINTMENT (PERMANENTLY)\\
@@ -30,37 +31,42 @@ const PatientList = ({ appointment, setAppointment, doctors }) => {
   }
 
   return (
-    <Container className='card-container appointment p-3 mt-5 '>
-      <h2 style={{ color: "red" }}>APPOINTMENT LIST</h2>
+    <Container
+      className='card-container p-3 mt-5 '>
+      <h2 className="mt-4" style={{ color: "red" }}>APPOINTMENT LIST</h2>
       {appointment.map((patient, i) => (
-        <div>
-          {doctors.map((dr) => (
-            dr.name == patient.doctor &&
+          <div
+            style={{ width: '25rem' }}>
+            {doctors.map((dr) => (
+              dr.name == patient.doctor &&
 
-            (<div key={i} className="appointment-div">
-              <div className= {patient.isDone ? "checked" : "unchecked"}>
-                <h3>{patient.patientName}</h3>
-                <h6>{patient.day}</h6>
-                <h5>{patient.doctor}</h5>
-              </div>
-              <div className="icons">
-                <div className="radio-icon" onClick={() => styleStorage(patient)}>
-                  {patient.isDone ? <MdCheckCircle /> : <MdRadioButtonUnchecked />}
+              (<Card key={i} className="appointment-div rounded-3" >
+                <div className={patient.isDone ? "checked" : "unchecked"} style={{ height: "180px" }}>
+
+                  <Card.Header className="fw-bold fs-4 rounded-2" style={{ background: patient.isDone ? "skyblue" : "lightgreen", color: !patient.isDone && " rgb(20, 74, 224)" }}>{patient.patientName}</Card.Header>
+                  <Card.Body>
+                    <h6>{patient.day}</h6>
+                    <h5>{patient.doctor}</h5>
+                  </Card.Body>
                 </div>
-                <div>
-                  <FaTrashAlt className="trash-icon" onClick={() => deleteAppointment(patient.id)} style={{ color: "red" }} />
+                <div className="icons">
+                  <div className="radio-icon" onClick={() => styleStorage(patient)}>
+                    {patient.isDone ? <MdCheckCircle /> : <MdRadioButtonUnchecked />}
+                  </div>
+                  <div>
+                    <FaTrashAlt className="trash-icon" onClick={() => deleteAppointment(patient.id)} style={{ color: "red" }} />
+                  </div>
                 </div>
-              </div>
-            </div>)
+              </Card>)
 
+            ))}
 
-          ))}
-
-        </div>
+          </div>
       ))}
-
     </Container>
+
   )
 }
 
 export default PatientList
+
