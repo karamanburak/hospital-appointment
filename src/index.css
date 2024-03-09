@@ -24,6 +24,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
+
 }
 
 .card-row {
@@ -43,6 +44,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    
 }
 
 
@@ -78,10 +81,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    gap: 0 1rem;
     background-color: #f8f1f1;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
  
 
 }
@@ -92,7 +92,7 @@ h1 {
     text-align: center;
     border-radius: 5px;
     box-shadow: 10px 10px 10px 0 rgba(138, 22, 22, 0.288);
-    color: maroon;
+    color: red;
     background-color: inherit;
     font-weight: bold;
 }
@@ -167,3 +167,6 @@ h1 {
 
 }
 
+.appointment-dr-div{
+    border: 2px solid red;
+}

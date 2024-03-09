@@ -1,10 +1,11 @@
 
-import { Container, Card, Row } from "react-bootstrap";
+import { Container, Card} from "react-bootstrap";
 import { FaTrashAlt } from "react-icons/fa";
 import { MdRadioButtonUnchecked, MdCheckCircle } from "react-icons/md";
 
 
-const PatientList = ({ appointment, setAppointment, doctors }) => {
+const PatientList = ({ appointment, setAppointment, doctors}) => {
+
   //& DELETE APPOINTMENT (PERMANENTLY)\\
   const deleteAppointment = (remove) => {
 
@@ -33,14 +34,14 @@ const PatientList = ({ appointment, setAppointment, doctors }) => {
   return (
     <Container
       className='card-container'>
-      <h2 className="mt-4" style={{ color: "red" }}>Appointment List</h2>
+      <h2 className="mt-5">Appointment List</h2>
 
-      {appointment.map((patient, i) => (
-        <div>
+      {appointment.map((patient) => (
+        <div key={patient.id}>
           {doctors.map((dr) => (
             dr.name == patient.doctor &&
 
-            (<Card key={i} className="appointment-div">
+            (<Card key={patient.id} className="appointment-div my-2 mx-2">
               <Card.Body className={patient.isDone ? "checked" : "unchecked"} style={{ height: "180px" }}>
                 <Card.Header className="fw-bold fs-4 rounded-2" style={{ background: patient.isDone ? "skyblue" : "lightgreen", color: !patient.isDone && " rgb(20, 74, 224)" }}>{patient.patientName}</Card.Header>
                   <h6 className="my-3">{patient.day}</h6>
