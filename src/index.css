@@ -13,25 +13,30 @@ body {
     background: linear-gradient(to right, #CFDEF3, #E0EAFC);
 }
 
+
+
+/*^ ---------------------------------- */
+/*^                HOME                */
+/*^ ---------------------------------- */
+
+.container{
+    background-color: #f8f1f1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
 .card-row {
     font-family: "Kanit", sans-serif;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f8f1f1;
-
-}
 
 
-
-.card-container h1 {
+h1 {
     display: inline-block;
     font-family: "Protest Guerrilla", sans-serif;
 }
+
 
 .header {
     display: flex;
@@ -65,15 +70,20 @@ body {
 }
 
 
-.appointment-div {
+/*^ ---------------------------------- */
+/*^        PATIENTLIST COMPONENT       */
+/*^ ---------------------------------- */
+
+.card-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-top: 1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
-    font-style: italic;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 0 1rem;
+    background-color: #f8f1f1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+ 
+
 }
 
 .card-container h2 {
@@ -88,12 +98,12 @@ body {
 }
 
 
-.header-div {
-    margin-top: 2rem;
+.appointment-div {
+    width: 25rem;
+    margin-top: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
 }
-
-
-
 .icons {
     display: flex;
     justify-content: center;
@@ -110,6 +120,16 @@ body {
     transform: scale(1.2);
     transition: all ease-in-out .2s;
 }
+
+.radio-icon {
+    color: purple;
+}
+
+.header-div {
+    margin-top: 2rem;
+}
+
+
 
 .checked {
     text-decoration: line-through;
@@ -147,6 +167,3 @@ body {
 
 }
 
-.radio-icon {
-    color: purple;
-}

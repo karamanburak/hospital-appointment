@@ -49,13 +49,14 @@ const Home = () => {
 
   return (
     <>
-      <Container className="card-container header-div p-3 ">
+      <Container className="container p-3 ">
         <div className="header">
-          <img className="logo" src={logo} alt="" width="150px" />
+          <img src={logo} alt="LOGO" width="150px" />
           <h1 className="text-danger text-center fw-bold"> AleXianer Hospital</h1>
         </div>
         <Row
           className="g-3 justify-content-center m-auto card-row"
+          sm={12}
            md={6}
           lg={4}
           xl={3} >
