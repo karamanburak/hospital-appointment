@@ -38,7 +38,7 @@ SOLUTION
 
 ## Expected Outcome
 
-![Project Snapshot](https://github.com/karamanburak/Hospital-Appointment-React/assets/150926922/9a1f5b83-fb6a-4da2-ba43-083f0187ceb4)
+![Project Snapshot](https://github.com/karamanburak/Hospital-Appointment-React/assets/150926922/21c49b0c-29d8-44e7-b9c9-9a883b737024)
 
 
 
@@ -67,6 +67,7 @@ Build a Hospital Appointment App using ReactJS.
 
 
 ## Notes
+
 
 - You can add additional functionalities to your app.
 
