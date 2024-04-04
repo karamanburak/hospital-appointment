@@ -68,7 +68,6 @@ Build a Hospital Appointment App using ReactJS.
 
 ## Notes
 
-
 - You can add additional functionalities to your app.
 
 ## Additional Data
