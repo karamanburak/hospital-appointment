@@ -1,13 +1,10 @@
-# Hospital-Appointment-React
-
-## Demo
+# hospital-appointment
 
 [Hospital Appointment Live](https://hospital-appointment-page.netlify.app/)
 
 ## Description
 
-Project aims to create a Hospital Appointment App.
-
+This project is a simple hospital appointment application. The project is developed with React. The purpose of the project is to view the doctors in the hospital and create an appointment with the desired doctor, change or cancel the created appointment. At the same time, the existing appointments of each doctor can be viewed and their times can be checked.
 
 ## Project Skeleton
 
@@ -36,25 +33,9 @@ SOLUTION
 └── README.md
 ```
 
-## Expected Outcome
+## Outcome
 
 ![Project Snapshot](https://github.com/karamanburak/Hospital-Appointment-React/assets/150926922/21c49b0c-29d8-44e7-b9c9-9a883b737024)
-
-
-
-## Objective
-
-Build a Hospital Appointment App using ReactJS.
-
-### At the end of the project, following topics are to be covered;
-
-- HTML
-
-- CSS
-
-- JS
-
-- ReactJS
 
 
 ## Steps to Solution
@@ -65,10 +46,6 @@ Build a Hospital Appointment App using ReactJS.
 
 - Step 4: You can use CSS frameworks like Bootstrap, Material UI.
 
-
-## Notes
-
-- You can add additional functionalities to your app.
 
 ## Additional Data
 
